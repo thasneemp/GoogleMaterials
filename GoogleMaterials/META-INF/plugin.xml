@@ -1,43 +1,55 @@
 <idea-plugin version="2">
-  <id>com.yourcompany.unique.plugin.id</id>
-  <name>Plugin display name here</name>
-  <version>1.0</version>
-  <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+    <id>com.gm.actions.GMAction</id>
+    <name>Useful sites</name>
+    <version>1.0</version>
+    <vendor email="muhammed.thasneem@yahoo.com" url="https://github.com/DroidDevelopers">MuhammedThasneem</vendor>
 
-  <description><![CDATA[
-      Enter short description for your plugin here.<br>
-      <em>most HTML tags may be used</em>
+    <description><![CDATA[
+      You can download source code from <a href="https://github.com/DroidDevelopers"></a>
     ]]></description>
 
-  <change-notes><![CDATA[
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>
+    <change-notes><![CDATA[
+
     ]]>
-  </change-notes>
+    </change-notes>
 
-  <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
-  <idea-version since-build="131"/>
+    <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+    <idea-version since-build="131"/>
 
-  <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
-       on how to target different products -->
-  <!-- uncomment to enable plugin in all products
-  <depends>com.intellij.modules.lang</depends>
-  -->
+    <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
 
-  <extensions defaultExtensionNs="com.intellij">
-    <!-- Add your extensions here -->
-  </extensions>
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
 
-  <application-components>
-    <!-- Add your application components here -->
-  </application-components>
+    <application-components>
+        <!-- Add your application components here -->
+    </application-components>
 
-  <project-components>
-    <!-- Add your project components here -->
-  </project-components>
+    <project-components>
+        <!-- Add your project components here -->
+    </project-components>
 
-  <actions>
-    <!-- Add your actions here -->
-  </actions>
+    <actions>
+        <!-- Add your actions here -->
+        <group id="Useful sites" description="Google" popup="true" text="Google" icon="/icons/icon.png" >
+            <action class="com.gm.actions.QuickListAction" id="com.gm.actions.QiuckListThrow"
+                    description="List all the useful sites in a popup" text="Google">
+                <!--<keyboard-shortcut first-keystroke="$default" keymap="shift ctrl x"/>-->
+                <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl alt X" />
+            </action>
+            <separator/>
+            <action class="com.gm.actions.OpenGoogleMaterialColors" id="com.gm.actions.OpenGoogleMaterialColors"
+                    description="Open google color" icon="/icons/material_color.png" text="Google Material Colors"/>
+            <action class="com.gm.actions.OpenGoogleMaterialsIcons" id="com.gm.actions.OpenGoogleMaterialsIcons"
+                    icon="/icons/material_icon.png" description="open google icons" text="Google Material Icons"/>
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+            <add-to-group group-id="MainToolBar" anchor="last"/>
+        </group>
+    </actions>
 
 </idea-plugin>
