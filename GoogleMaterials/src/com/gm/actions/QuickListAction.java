@@ -33,6 +33,6 @@ public class QuickListAction extends QuickSwitchSchemeAction implements DumbAwar
 
     @Override
     protected boolean isEnabled() {
-        return false;
+        return true;
     }
 }
