@@ -1,7 +1,7 @@
 <idea-plugin version="2">
     <id>com.gm.actions.GMAction</id>
     <name>Useful sites</name>
-    <version>1.0</version>
+    <version>1.1</version>
     <vendor email="muhammed.thasneem@yahoo.com" url="https://github.com/DroidDevelopers">MuhammedThasneem</vendor>
 
     <description><![CDATA[
@@ -9,7 +9,7 @@
     ]]></description>
 
     <change-notes><![CDATA[
-
+Quick List action bug fixed.
     ]]>
     </change-notes>
 
