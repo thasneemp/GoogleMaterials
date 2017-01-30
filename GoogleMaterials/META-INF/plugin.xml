@@ -2,14 +2,15 @@
     <id>com.gm.actions.GMAction</id>
     <name>Useful sites</name>
     <version>1.1</version>
-    <vendor email="muhammed.thasneem@yahoo.com" url="https://github.com/DroidDevelopers">MuhammedThasneem</vendor>
+    <vendor email="muhammed.thasneem@yahoo.com" url="https://github.com/thasneemp">MuhammedThasneem</vendor>
 
     <description><![CDATA[
-      You can download source code from <a href="https://github.com/DroidDevelopers"></a>
+      You can download source code from <a href="https://github.com/thasneemp"></a>
     ]]></description>
 
     <change-notes><![CDATA[
-Quick List action bug fixed.
+New Features added
+
     ]]>
     </change-notes>
 
@@ -47,6 +48,10 @@ Quick List action bug fixed.
                     description="Open google color" icon="/icons/material_color.png" text="Google Material Colors"/>
             <action class="com.gm.actions.OpenGoogleMaterialsIcons" id="com.gm.actions.OpenGoogleMaterialsIcons"
                     icon="/icons/material_icon.png" description="open google icons" text="Google Material Icons"/>
+            <action class="com.gm.actions.AndroidDpConverter" id="com.gm.actions.AndroidDpConverter"
+                    icon="/icons/dpid.png" description="DPI Calculator" text="DPI Calculator"/>
+            <action class="com.gm.actions.JSONViewer" id="com.gm.actions.JSONViewer"
+                    icon="/icons/json.png" description="Json Parser Online" text="Json Parser Online"/>
             <add-to-group group-id="ToolsMenu" anchor="last"/>
             <add-to-group group-id="MainToolBar" anchor="last"/>
         </group>

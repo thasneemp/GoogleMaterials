@@ -16,6 +16,8 @@ public class QuickListAction extends QuickSwitchSchemeAction implements DumbAwar
         }
         addAction("com.gm.actions.OpenGoogleMaterialColors", defaultActionGroup);
         addAction("com.gm.actions.OpenGoogleMaterialsIcons", defaultActionGroup);
+        addAction("com.gm.actions.AndroidDpConverter", defaultActionGroup);
+        addAction("com.gm.actions.JSONViewer", defaultActionGroup);
     }
 
     private void addAction(String actionID, DefaultActionGroup group) {
