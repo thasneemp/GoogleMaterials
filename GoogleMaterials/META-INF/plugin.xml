@@ -1,7 +1,7 @@
 <idea-plugin version="3">
     <id>com.gm.actions.GMAction</id>
     <name>Useful sites</name>
-    <version>1.2</version>
+    <version>1.3</version>
     <vendor email="muhammed.thasneem@yahoo.com" url="https://github.com/thasneemp">MuhammedThasneem</vendor>
 
     <description><![CDATA[
@@ -52,6 +52,8 @@ New Features added
                     icon="/icons/dpid.png" description="DPI Calculator" text="DPI Calculator"/>
             <action class="com.gm.actions.JSONViewer" id="com.gm.actions.JSONViewer"
                     icon="/icons/json.png" description="Json Parser Online" text="Json Parser Online"/>
+            <action class="com.gm.actions.PojoCreater" id="com.gm.actions.PojoCreater"
+                    icon="/icons/pojo.png" description="Create Pojo classes Online" text="Create Pojo classes Online"/>
             <add-to-group group-id="ToolsMenu" anchor="last"/>
             <add-to-group group-id="MainToolBar" anchor="last"/>
         </group>
